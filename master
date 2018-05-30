@@ -1,0 +1,974 @@
+<style>
+	.sportPage{
+	margin: 0 auto;
+	width: 100%;
+	overflow: hidden;
+	}
+	
+	.sportPage .row{
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+	}
+	
+	/* SPORT PAGE FONT STYLES */
+	.brandFont{
+	font-family: 'Avenir Next W02 Light', helvetica, arial, sans-serif !important;
+	text-transform: uppercase;
+	font-size: 48px;
+	color: #000000;
+	letter-spacing: 16px;
+	line-height: 72px;
+	}
+	
+	.sportPage h1{
+	font-family: 'Avenir Next LT W02 Bold', helvetica, arial, sans-serif;
+	font-size: 48px;
+	color: #000000;
+	opacity: 0.8;
+	letter-spacing: 16px;
+	line-height: 72px;
+	}
+	
+	.sportPage h3{
+	font-family: 'Avenir Next LT W02 Bold', helvetica, arial, sans-serif;
+	font-size: 32px;
+	line-height: 48px;
+	opacity: 0.8;
+	}
+	
+	.sportPage h4{
+	opacity: 0.8;
+	font-family: 'Avenir Next LT W02 Bold', helvetica, arial, sans-serif;
+	font-size: 28px;
+	letter-spacing: 0;
+	line-height: 48px;
+	}
+	
+	.sportPage h5{
+	opacity: 0.8;
+	font-family: 'Avenir Next LT W02 Bold', helvetica, arial, sans-serif;
+	font-size: 18px;
+	color: #000000;
+	letter-spacing: 0;
+	line-height: 32px;
+	}
+	
+	.sportPage p {
+	font-size: 18px;
+	color: #121212;
+	letter-spacing: -0.3px;
+	line-height: 36px;
+	}
+	
+	.lightHeadline{
+	font-family: 'AvenirNextLTW02-Medium', helvetica, arial, sans-serif;
+	font-size: 22px;
+	letter-spacing: 0.05em;
+	line-height: 42px;
+	display:block;
+	}
+	
+	.recircleHeadline{
+	font-size:45px;
+	font-family: 'Avenir Next LT W02 Demi', helvetica, arial, sans-serif;
+	letter-spacing: 0.15em;
+	line-height:55px;
+	display:block;
+	}
+	
+	.noOrange:link{
+	color: #000000 !important;	
+	}
+	
+	.noOrange:hover{
+		color: #000000 !important;
+		opacity: 0.8;
+	}
+	
+	.noOrange:active{
+		color:#000000 !important;
+	}
+	
+	.noOrange:visited{
+		color:#000000 !important;
+	}
+	/* END SPORT PAGE FONT STYLES */
+	
+	/* START BUTTON STYLES */
+	.buttonBlack{
+	background-color: #000000;
+	font-family: 'Avenir Next LT W02 Demi', helvetica, arial, sans-serif;
+	font-size: 15px;
+	line-height: 18px;
+	color:rgba(255, 255, 255,0.85);
+	border-radius: 25px;
+	text-align: center;
+	text-decoration: none;
+	padding: 12px 28px;
+	display: inline-block;
+	}
+	
+	.buttonBlack:hover{
+		color: #ffffff;
+	}
+	
+	.buttonBlack:visited{
+		color: #ffffff;
+	}
+	
+	.buttonOutline{
+	font-family: 'Avenir Next LT W02 Demi', helvetica, arial, sans-serif;
+	font-size: 15px;
+	line-height: 18px;
+	color: #000000;
+	border: 2px solid #000000;
+	border-radius: 25px;
+	text-align: center;
+	text-decoration: none;
+	padding: 12px 28px;
+	display: inline-block;
+	}
+	
+	.buttonOutline:hover{
+		color: #ffffff;
+		background-color: #000000;
+		-webkit-transition: all .25s cubic-bezier(0.25,0.1,0.25,1);
+   transition: all .25s cubic-bezier(0.25,0.1,0.25,1);
+	}
+	
+	.categoryButtons a{
+		min-width: 250px;
+	}
+	
+	.ctaPadding{
+		padding: 8% 0 0 0;
+	}
+	
+	.exploreSport{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	
+	.sectionHeadline{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	width: 100%;
+	}
+	/* END BUTTON STYLES */
+	
+	/* START VIDEO STYLES */
+	#mainSportVideo{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	height: 100vh;
+	min-height: 480px;
+	max-height: 56vw;
+	}
+	
+	.video-thumbnail{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+	width:100px;
+	height:auto;
+	}
+	
+	.video-thumbnail:hover{
+		opacity: 0.8;
+	}
+	
+	.vidContain {
+    position: absolute;
+	z-index: -1;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	overflow: hidden;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-image: none;
+	}
+	
+	.sportVid{
+	position: absolute;
+    right: 0;
+    bottom: 0;
+	top:0;
+	left:0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+	}
+	
+	.insetVideoThumb{
+		position: absolute;
+		top:0;
+		left: 0;
+	}
+	
+	.patagonia-video{
+		background: none !important;
+		box-shadow: none !important;
+		margin: 5% 0;
+	}
+	/* END VIDEO STYLES */
+	
+	/* POSITIONING SHORTCUTS */
+	.relative{
+	position: relative;
+	}
+	
+	.absolute{
+	position: absolute;
+	}
+	
+	.left{
+	float: left;
+	}
+	
+	.right{
+	float: right;
+	}
+	/* END POSITIONING SHORTCUTS */
+	
+	/* START COLOR SHORTCUTS */
+	.gray{
+	background-color: #fafafa;
+	}
+	
+	.gray-2{
+		background-color: rgb(224, 224, 224);
+	}
+	
+	.gray-3{
+		background-color: #E6E6E0;
+	}
+	
+	.white{
+		color: #ffffff !important;
+	}
+	
+	.recircleBody{
+		color: #3C3C3C !important;
+	}
+	
+	.black{
+		color: #000000;
+	}
+	/* END COLOR SHORTCUTS */
+	
+	/* START CONTENT AREA STYLES */
+	.containerPadding{
+	padding: 8% 0 8% 0;
+	}
+	
+	.contentBlock{
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+	}
+	
+	.imageBlock{
+	position: relative;
+	}
+	
+	.surfing-floatingHeadline{
+	position:absolute;
+	top:-10%;
+	left: 10%;
+	float: left;
+	width: 50%;
+	}
+	
+	.surfing-floatingCopy{
+	margin-top:10%;
+	}
+	
+	@media (max-width:1200px){
+	.surfing-floatingHeadlineUPDATELATER{
+	margin-left: -20%;
+	margin-top:5%;
+	}
+	
+	.surfing-floatingCopy{
+	margin-top:0%;
+	}
+		
+	.brandFont{
+	font-size: 38px;
+	letter-spacing: 16px;
+	line-height: 62px;
+	}
+	}
+	
+	@media (max-width:992px){
+	.surfing-floatingHeadlineUPDATELATER{
+	margin-left: -30%;
+	margin-top:5%;
+	}
+	
+	.surfing-floatingCopy{
+	margin-top:5%;
+	}
+	
+	.brandFont{
+	font-size: 38px;
+	letter-spacing: 16px;
+	line-height: 62px;
+	}	
+	}
+	
+	.cardBody{
+		max-width: 400px;
+		max-height: 650px;
+		background-color: #ffffff;
+		padding: 15% 10%;
+		text-align: center;
+	}
+	
+	.cardBodyLink{
+		font-size: 18px;
+		letter-spacing: -0.3px;
+    	line-height: 36px;
+		color: #3C3C3C !important;
+		display:block;
+		margin: 5% 0;
+	}
+	
+	.cardBodyLink:hover{
+		opacity: 0.8;
+	}
+	
+	.cardOne{
+		position: absolute;
+		z-index: 10;
+		top: 80%;
+	}
+	
+	.cardTwo{
+		position: absolute;
+		z-index: 10;
+		top: -15%;
+	}
+	
+	.cardThree{
+		position: absolute;
+		z-index: 10;
+		top: 30%;
+	}
+	
+	.cardFour{
+		position: absolute;
+		z-index: 10;
+		top: 88%;
+	}
+	
+	.cardEnviro {
+		position: absolute;
+		top: 62%;
+	}
+	
+	/* TABLET card styles */
+	@media (max-width: 992px){
+	
+	.cardThree{
+		top: 28%;
+		right: 10%
+	}
+	
+	.cardFour{
+		top: 85%;
+    	right: 2%;
+	}
+	
+	.cardEnviro {
+		top: 78%;
+	}	
+	}
+	
+	
+	/* MOBILE card styles */
+	@media (max-width: 768px){
+	
+	.contentCentered{
+		margin: 0 auto;
+	}
+	
+	.cardOne{
+		position: relative;
+	}
+	
+	.cardTwo{
+		position: relative;
+	}
+	
+	.cardThree{
+		position: relative;
+		right: unset;
+	}
+	
+	.cardFour{
+		position: relative;
+		right: unset;
+	}
+	
+	.cardEnviro {
+		position: relative;
+	}
+	}
+	
+	/* end mobile card styles */
+	
+	.productSetPadding{
+	padding-top:15%;
+	}
+	
+	.productSetLink{
+	margin-top: 10%;
+	}
+	
+	.productHeader{
+		padding-top: 10%;
+	}
+	
+	.productHeader:first-child{
+		padding-top:0;
+	}
+	
+	.paddingTopFive{
+		padding-top:5%;
+	}
+	
+	.paddingTopEight{
+		padding-top:8%;
+	}
+	
+	.paddingTopSixteen{
+		padding-top: 16%;
+	}
+	
+	.paddingBottomFive{
+	padding-bottom: 5%
+	}
+	
+	.copyBlock{
+		padding: 8% 0;
+	}
+	
+	.centered{
+		text-align: center;
+	}
+	
+	.copyBlock p{
+	font-size: 18px;
+	color: #121212;
+	letter-spacing: -0.3px;
+	line-height: 36px;
+	padding: 4% 0;
+	}
+	
+	.copyBlock a{
+	font-family: 'Avenir Next LT W02 Bold';
+		font-size: 18px;
+	}
+	
+	.copyBlock a:hover{
+		border-bottom: 2px solid #000000;
+		color: #000000 !important;
+	}
+	
+	
+	/* PRODUCT SET CLASSES - NAME, BODY COPY, CTA */
+	.productImage{
+	display: inline-block;
+	}
+	
+	.productImage img{
+	padding-bottom:5%;
+	}
+	
+	.productImage a{
+	font-family: 'Avenir Next LT W02 Bold', Helvetica, arial, sans-serif;
+	color: #121212;
+	text-align: center;
+	font-size: 18px;
+	line-height:28px;
+	}
+	
+	.productImage a:hover{
+	border-bottom: 2px solid #121212;
+	color: #121212 !important;
+	}
+	
+	.productImage p{
+	padding: 5%;
+	}
+	
+	.img-hover{
+	display: none;
+	position: absolute;
+	top: 0;
+	left:0;
+	z-index:99;
+	padding-left: 15px;
+	padding-right: 15px;
+	}
+	
+	.productImage:hover .img-hover{
+	display: inline;	
+	}
+	
+	.hoverImage img{
+	padding-bottom:5%;
+	}
+	
+	.hoverImage a{
+	font-family: 'Avenir Next LT W02 Bold', Helvetica, arial, sans-serif;
+	color: #121212;
+	text-align: center;
+	font-size: 18px;
+	line-height:28px;
+	}
+	
+	.hoverImage a:hover{
+	border-bottom: 2px solid #121212;
+	color: #121212 !important;
+	}
+	
+	.hoverImage p{
+	padding: 5%;
+	}
+	
+	.hoverImage{
+	position:relative;
+}
+
+.hoverImage:hover .hover{
+	transform:scale(1.1);
+	transition:0.4s;
+}
+	
+	/* END PRODUCT SET CLASSES */
+	.grayBackground{
+	background-color: #f5f5f5;
+	}
+	
+	.fullWidthImage{
+	width: 100%;
+	}
+	
+	.imageFifty{
+		width: 70%;
+	}
+	
+	.photo-caption {
+	color: black;
+	}
+	
+	.desktopHide{
+	display:none;
+	}
+
+/* MOBILE STYLES */
+	@media (max-width:768px){
+		.sportPage h3{
+		font-family: 'Avenir Next LT W02 Bold', helvetica, arial, sans-serif;
+		font-size: 28px;
+		color: #000000;
+		line-height: 44px;
+		opacity: 0.8;
+		}
+		
+		.brandFont{
+			font-size:32px;
+			letter-spacing:8px;
+			line-height:48px;
+		}
+		
+		.productImage:hover .img-hover{
+		display: none;
+		}
+		
+		.mobileHide{
+		display:none;
+		}
+		
+		.mobileShow{
+		display:block;
+		}
+		
+		.mobileCenter{
+		text-align:center;
+		}
+		
+		#mainSportVideo{
+		display:none;
+		}
+		
+		.surfing-imageBlockHeadline{
+		position: relative;
+		width: 100%;
+		display:block;
+		top:0;
+		left:0;
+		padding-bottom: 15%;
+		}
+		
+		.surfing-imageBlockBodyCopy{
+		position: relative;
+    	bottom: 0;
+    	right: 0;
+    	width: 100%;
+		display:block;
+	}
+		
+		.copyBlock{
+			padding: 8% 10%;
+		}
+		
+		.copyBlock p{
+			font-size:16px;
+			line-height: 36px;
+		}
+		
+		.mobileOnlyCopyBlock{
+			padding: 15% 10%;
+		}
+		
+		.mobileOnlyCopyBlock p{
+			font-size:16px;
+			line-height: 36px;
+		}
+		
+		.productImage{
+			padding: 0;
+		}
+		
+		.productImage a{
+		font-family: 'Avenir Next LT W02 Bold', Helvetica, arial, sans-serif;
+		color: #121212;
+		text-align: center;
+		font-size: 14px;
+		line-height:24px;
+		}
+		
+		.productImage p{
+			font-size: 14px;
+			line-height: 24px;
+		}
+		
+		.categoryButtons a:first-child{
+		margin-bottom: 10px;
+		}	
+		
+		.paddingTopSixteen{
+			padding-top:0;
+		}
+		
+		.twoProductPaddingLeft{
+		padding: 0 5px 0 15px;
+		}
+		
+		.twoProductPaddingRight{
+		padding: 0 15px 0 5px;
+		}
+		
+		.mobilePaddingTopTen{
+			padding-top:10%;
+		}
+		
+		.mobilePaddingTopFifteen{
+			padding-top:15%;
+		}
+		
+		.mobilePaddingBottomFour{
+			padding-bottom: 4%;
+		}
+		
+		.mobilePaddingBottomEight{
+			padding-bottom: 8%;
+		}
+		
+		.mobilePaddingBottomSixteen{
+			padding-bottom: 16%;
+		}
+		
+		.mobilePaddingBothEight{
+			padding: 8% 0;
+		}
+		
+		.mobilePaddingEightTen{
+			padding: 8% 10%;
+		}
+		
+		.twoProductPaddingLeft{
+			padding: 0 5px 0 15px;
+		}
+		
+		.twoProductPaddingRight{
+			padding: 0 15px 0 5px;
+		}
+	}
+
+
+	
+ .hero-image-parallax {
+  background-image: url(/images/sport-pages/recircle/holstein_k_0002-small.jpg?$staticlink$);
+}
+
+.fabric-image-parallax {
+  background-image: url(/images/sport-pages/recircle/fabric-panel-small.jpg?$staticlink$);	
+}
+	
+.button-circle {
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 50%;
+  display: inline-block;
+  border: 2px solid #ffffff;
+}
+
+	.button-circle-active{
+		box-shadow: 0 0 0 2px #666666;
+	}
+	
+	.button-circle:last-child{
+		margin-left: 8px;
+	}
+	
+	.swatchOne{
+		background-color: #635941;
+	}
+	
+	.swatchOne:hover{
+		background-color: #635941;
+		outline: #cccccc solid 2px;
+	}
+	
+	.swatchTwo{
+		background-color: #838695;
+	}
+	
+	.swatchTwo:hover{
+		background-color: #838695;
+	}
+	
+	.parallax-window {
+    min-height: 80vh;
+    background: transparent;
+	}
+	
+	.parallax-window-fs {
+    min-height: 90vh;
+    background: transparent;
+	}
+	
+</style>
+
+
+<div class="sportPage">
+
+<div class="contentBlock">
+	<div class="parallax-window-fs" data-parallax="scroll" data-image-src="/images/sport-pages/recircle/holstein_k_0002-small.jpg?$staticlink$" data-ios-fix="true">
+	
+		<div class="sectionHeadline centered">
+			<span class="lightHeadline white">The ReCircle Collection</span>
+			<span class="recircleHeadline white" style="padding-top: 1%;">OUT OF THE WOODS</span>
+		</div>
+		
+		<div class="photo-caption photo-credits">
+			<span class="photo-icon glyphicon glyphicon-camera" style="display: inline-block;"></span> 
+			<span class="photo-caption-text" style="display: none;">KATE HOLSTEIN</span>
+		</div>
+		
+	</div>
+</div>
+		
+	<a name="featured" id="featured"></a>
+	<div class="contentBlock gray-2 mobilePaddingBottomSixteen">
+		<div class="container-fluid containerPadding">
+			<div class="row paddingBottomFive">
+				<div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 mobilePaddingTopTen">
+					<span class="lightHeadline" style="letter-spacing: 0;">Fabric made from renewable wood<br />and recycled cotton scraps.</span> 
+					<p class="recircleBody paddingTopFive paddingBottomFive">Our new ReCircle collection is made from industry-changing fabric with REFIBRA™ lyocell fibers (80% wood/20% recycled cotton scraps).</p>
+					<a class="buttonOutline" href="$url('Search-Show','cgid','collections-recircle')$">Shop</a>
+					<a style="font-size: 15px; line-height: 18px; font-family: 'Avenir Next LT W02 Demi', helvetica, arial, sans-serif; margin-left: 15px;" href="$url('Page-Show','cid','refibra')$">Learn More</a>
+				</div>
+				
+				<div class="col-lg-5 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-12">
+					<img class="img-responsive mobilePaddingTopFifteen" src="/images/sport-pages/recircle/Rebibra_Fabric_Clean_06_White_6.gif?$staticlink$">
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-lg-4 col-lg-offset-7 col-md-4 col-md-offset-7 col-sm-5 col-sm-offset-6 col-xs-12 mobilePaddingTopTen cardOne">
+					<div class="cardBody contentCentered">
+						<div class="jsProductContainer">
+							<div class="image-one jsImages jsImageOne"><a href="$url('Product-Show','pid','52845', 'dwvar_52845_color', 'CPLG')$"><img src="/images/sport-pages/recircle/WBS18_52845_CPLG.png?$staticlink$" class="img-responsive"></a></div>
+							<div class="image-two jsImages jsImageTwo" style="display:none;"><a href="$url('Product-Show','pid','52845', 'dwvar_52845_color', 'CBTB')$"><img src="/images/sport-pages/recircle/WBS18_52845_CBTB.png?$staticlink$" class="img-responsive"></a></div>
+							
+							<div class="row">
+								<a class="cardBodyLink" href="$url('Product-Show','pid','52845')$">ReCircle Tank</a>
+							</div>
+							
+							<a class="button-circle button-circle-active swatchOne jsButton jsSwatchOne" data-show-image-selector=".jsImageOne"></a>
+							<a class="button-circle swatchTwo jsButton jsSwatchTwo" data-show-image-selector=".jsImageTwo"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="contentBlock">
+		<div class="parallax-window" data-parallax="scroll" data-natural-width="1440" data-natural-height="720" data-ios-fix="true">
+			
+				<video class="parallax-slider sportVid" autoplay loop playsinline muted poster="/images/sport-pages/recircle/fabric-panel.jpg?$staticlink$">
+    				<source src="http://media.patagonia.com/marketing/videos/recircle-fabric-loop.mp4" type="video/mp4">
+    				<source src="/images/sport-pages/recircle/recircle-fabric-loop.webm?$staticlink$" type="video/webm">
+    				<source src="/images/sport-pages/recircle/recircle-fabric-loop.ogv?$staticlink$" type="video/ogg">
+  				</video>
+		</div>		
+	</div>
+	
+	<div class="contentBlock gray-3">
+		<div class="container-fluid containerPadding">
+			<div class="row">
+				<div class="col-lg-4 col-lg-offset-1 col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-0 col-xs-12 mobilePaddingTopTen cardTwo">
+					<div class="cardBody contentCentered">
+						<div class="jsProductContainer">
+							<div class="image-one jsImages jsImageOne"><a href="$url('Product-Show','pid','27885', 'dwvar_27885_color', 'CPLG')$"><img src="/images/sport-pages/recircle/WBS18_27885_CPLG.png?$staticlink$" class="img-responsive"></a></div>
+							<div class="image-two jsImages jsImageTwo" style="display:none;"><a href="$url('Product-Show','pid','27885', 'dwvar_27885_color', 'CBTB')$"><img src="/images/sport-pages/recircle/WBS18_27885_CBTB.png?$staticlink$" class="img-responsive"></a></div>
+							
+							<div class="row">
+								<a class="cardBodyLink" href="$url('Product-Show','pid','27885')$">ReCircle Bomber</a>
+							</div>
+						
+							<div class="row">
+								<a class="button-circle button-circle-active swatchOne jsButton jsSwatchOne" data-show-image-selector=".jsImageOne"></a>
+								<a class="button-circle swatchTwo jsButton jsSwatchTwo" data-show-image-selector=".jsImageTwo"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row paddingTopSixteen">
+				<div class="col-lg-4 col-lg-offset-3 col-md-4 col-md-offset-3 col-sm-5 col-xs-10 col-xs-offset-1 mobilePaddingTopTen">
+					<p class="recircleBody">The entire collection is designed with simplicity in mind; the soft, lustrous fabric moves and feels like washed silk. And because the fabric is naturally breathable and moisture wicking, it’s ideal for travel and everyday wear.</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-lg-4 col-lg-offset-8 col-md-4 col-md-offset-8 col-sm-5 col-sm-offset-7 col-xs-8 col-xs-offset-2 mobilePaddingTopTen">
+					<img src="/images/sport-pages/recircle/getty_images_0019.jpg?$staticlink$" class="img-responsive">
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-5 col-sm-offset-0 col-xs-12 mobilePaddingTopTen">
+					<div class="cardBody contentCentered">
+						<div class="jsProductContainer">
+							<div class="image-one jsImages jsImageOne"><a href="$url('Product-Show','pid','55235', 'dwvar_55235_color', 'CPLG')$"><img src="/images/sport-pages/recircle/WBS18_55235_CPLG.png?$staticlink$" class="img-responsive"></a></div>
+							<div class="image-two jsImages jsImageTwo" style="display:none;"><a href="$url('Product-Show','pid','55235', 'dwvar_55235_color', 'CBTB')$"><img src="/images/sport-pages/recircle/WBS18_55235_CBTB.png?$staticlink$" class="img-responsive"></a></div>
+						
+							<div class="row">
+								<a class="cardBodyLink" href="$url('Product-Show','pid','55235')$">ReCircle Cropped Pants</a>
+							</div>
+						
+							<div class="row">
+								<a class="button-circle button-circle-active swatchOne jsButton jsSwatchOne" data-show-image-selector=".jsImageOne"></a>
+								<a class="button-circle swatchTwo jsButton jsSwatchTwo" data-show-image-selector=".jsImageTwo"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg-4 col-lg-offset-6 col-md-4 col-md-offset-6 col-sm-5 col-sm-offset-5 col-xs-12 mobilePaddingTopTen cardThree">
+					<div class="cardBody contentCentered">
+						<div class="jsProductContainer">
+							<div class="image-one jsImages jsImageOne"><a href="$url('Product-Show','pid','58420', 'dwvar_58420_color', 'CPLG')$"><img src="/images/sport-pages/recircle/WBS18_58420_CPLG.png?$staticlink$" class="img-responsive"></a></div>
+							<div class="image-two jsImages jsImageTwo" style="display:none;"><a href="$url('Product-Show','pid','58420', 'dwvar_58420_color', 'CBTB')$"><img src="/images/sport-pages/recircle/WBS18_58420_CBTB.png?$staticlink$" class="img-responsive"></a></div>
+							
+							<div class="row">
+								<a class="cardBodyLink" href="$url('Product-Show','pid','58420')$">ReCircle Dress</a>
+							</div>
+						
+							<div class="row">
+								<a class="button-circle button-circle-active swatchOne jsButton jsSwatchOne" data-show-image-selector=".jsImageOne"></a>
+								<a class="button-circle swatchTwo jsButton jsSwatchTwo" data-show-image-selector=".jsImageTwo"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-lg-4 col-lg-offset-7 col-md-4 col-md-offset-7 col-sm-5 col-sm-offset-0 col-xs-10 col-xs-offset-1 mobilePaddingTopTen cardEnviro">
+					<p class="recircleBody">Working with Lenzing, a manufacturer based in Austria, we’re using REFIBRA™ lyocell, a pulp-based fabric that includes recycled cotton. Our goal is to introduce more and more cellulose fibers like REFIBRA to our products and increase our use of recycled materials.</p>
+					<a href="$url('Page-Show','cid','refibra')$" class="cardBodyLink"><strong>Learn More</strong></a>
+				</div>
+			</div>
+			
+			<div class="row paddingTopSixteen">
+				<div class="col-lg-5 col-lg-offset-5 col-md-4 col-md-offset-6 col-sm-6 col-sm-offset-6 mobilePaddingTopTen">
+					<img src="/images/sport-pages/recircle/getty_images_0018.jpg?$staticlink$" class="img-responsive">
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-lg-4 col-lg-offset-8 col-md-4 col-md-offset-8 col-sm-5 col-sm-offset-7 col-xs-12 mobilePaddingTopTen cardFour">
+					<div class="cardBody contentCentered">
+						<div class="jsProductContainer">
+							<div class="image-one jsImages jsImageOne"><a href="$url('Product-Show','pid','52415', 'dwvar_52415_color', 'CPLG')$"><img src="/images/sport-pages/recircle/WBS18_52415_CPLG.png?$staticlink$" class="img-responsive"></a></div>
+							<div class="image-two jsImages jsImageTwo" style="display:none;"><a href="$url('Product-Show','pid','52415', 'dwvar_52415_color', 'CBTB')$"><img src="/images/sport-pages/recircle/WBS18_52415_CBTB.png?$staticlink$" class="img-responsive"></a></div>
+						
+							<div class="row">
+								<a class="cardBodyLink" href="$url('Product-Show','pid','52415')$">ReCircle Top</a>
+							</div>
+							
+							<div class="row">
+								<a class="button-circle button-circle-active swatchOne jsButton jsSwatchOne" data-show-image-selector=".jsImageOne"></a>
+								<a class="button-circle swatchTwo jsButton jsSwatchTwo" data-show-image-selector=".jsImageTwo"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="contentBlock">
+			<img src="/images/sport-pages/recircle/holstein_k_0003.jpg?$staticlink$" class="fullWidthImage img-responsive">
+			
+			<div class="photo-caption photo-credits">
+					<span class="photo-icon glyphicon glyphicon-camera" style="display: inline-block;"></span> 
+					<span class="photo-caption-text" style="display: none;">KATE HOLSTEIN</span>
+			</div>
+			
+			<div class="exploreSport">
+				<a href="$url('Search-Show','cgid','collections-recircle')$" class="buttonBlack" style="min-width: 225px;">Shop the Collection</a>
+			</div>
+	</div>
+</div>
+
+
+<script src="/marketing/common-sports-pages/parallax.js?$staticlink$"></script>
+<script src="/marketing/common-sports-pages/swatch-selector-active-swatch.js?$staticlink$"></script>
